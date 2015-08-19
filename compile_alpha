@@ -1,0 +1,27 @@
+#!/bin/bash
+
+set -e
+
+cd adpcm/src/
+make CC=alphaev67-unknown-linux-gnu-gcc
+cd ../..
+
+cd bitcount/
+make CC=alphaev67-unknown-linux-gnu-gcc
+cd ..
+
+cd CRC32/
+make CC=alphaev67-unknown-linux-gnu-gcc
+cd ..
+
+cd dijkstra/
+make CC=alphaev67-unknown-linux-gnu-gcc
+cd ..
+
+cd gsm/
+make PREFIX=alphaev67-unknown-linux-gnu-
+cd ..
+
+cd typeset/lout-3.24
+make PREFIX=alphaev67-unknown-linux-gnu-
+cd ../..

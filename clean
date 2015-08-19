@@ -1,0 +1,27 @@
+#!/bin/bash
+
+set -e
+
+cd adpcm/src/
+make clean
+cd ../..
+
+cd bitcount/
+make clean
+cd ..
+
+cd CRC32/
+make clean
+cd ..
+
+cd dijkstra/
+make clean
+cd ..
+
+cd gsm/
+make clean
+cd ..
+
+cd typeset/lout-3.24
+make clean
+cd ../..

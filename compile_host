@@ -1,0 +1,27 @@
+#!/bin/bash
+
+set -e
+
+cd adpcm/src/
+make CC=gcc
+cd ../..
+
+cd bitcount/
+make CC=gcc
+cd ..
+
+cd CRC32/
+make CC=gcc
+cd ..
+
+cd dijkstra/
+make CC=gcc
+cd ..
+
+cd gsm/
+make
+cd ..
+
+cd typeset/lout-3.24
+make
+cd ../..
