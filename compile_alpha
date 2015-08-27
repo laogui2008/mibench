@@ -25,3 +25,7 @@ cd ..
 cd typeset/lout-3.24
 make PREFIX=alphaev67-unknown-linux-gnu-
 cd ../..
+
+cd patricia/
+make CC=alphaev67-unknown-linux-gnu-gcc
+cd ..

@@ -25,3 +25,7 @@ cd ..
 cd typeset/lout-3.24
 make
 cd ../..
+
+cd patricia/
+make CC=gcc
+cd ..
