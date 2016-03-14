@@ -23,6 +23,10 @@ cd basicmath/
 make CC=$GCC
 cd ..
 
+cd blowfish/
+make CC=$GCC
+cd ..
+
 cd CRC32/
 make CC=$GCC
 cd ..
@@ -51,10 +55,13 @@ cd qsort/
 make CC=$GCC
 cd ..
 
-cd susan/
+cd sha/
 make CC=$GCC
 cd ..
 
+cd susan/
+make CC=$GCC
+cd ..
 
 cd typeset/lout-3.24
 make PREFIX=$GCCPREFIX
