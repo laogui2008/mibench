@@ -43,6 +43,10 @@ cd qsort/
 make CC=$GCC
 cd ..
 
+cd susan/
+make CC=$GCC
+cd ..
+
 
 cd typeset/lout-3.24
 make PREFIX=$GCCPREFIX
