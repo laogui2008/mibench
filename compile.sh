@@ -19,6 +19,10 @@ cd bitcount/
 make CC=$GCC
 cd ..
 
+cd basicmath/
+make CC=$GCC
+cd ..
+
 cd CRC32/
 make CC=$GCC
 cd ..
