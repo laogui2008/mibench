@@ -35,6 +35,14 @@ cd gsm/
 make PREFIX=$GCCPREFIX
 cd ..
 
+cd jpeg/jpeg-6a/
+make CC=$GCC
+cd ../..
+
+cd lame/lame3.70/
+make CC=$GCC
+cd ../..
+
 cd patricia/
 make CC=$GCC
 cd ..
