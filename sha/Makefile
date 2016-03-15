@@ -6,6 +6,9 @@
 #CC = gcc #defined externally
 CFLAGS = -O3 -Wall
 
+%.o: %.c
+	$(PREFIX)gcc -c $(CFLAGS) -o $@ $<
+
 sha:	sha_driver.o sha.o
 	$(PREFIX)gcc -o $@ sha_driver.o sha.o
 	$(PREFIX)strip $@
