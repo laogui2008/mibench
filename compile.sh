@@ -43,10 +43,6 @@ cd gsm/
 make PREFIX=$GCCPREFIX
 cd ..
 
-cd ghostscript/src
-make CC="$GCC -static"
-cd ..
-
 cd jpeg/jpeg-6a/
 make CC=$GCC
 cd ../..
@@ -64,7 +60,7 @@ make CC=$GCC
 cd ..
 
 cd sha/
-make CC=$GCC
+make PREFIX=$GCCPREFIX
 cd ..
 
 cd susan/

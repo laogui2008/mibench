@@ -1,0 +1,6 @@
+#!/bin/bash
+
+export GCCPREFIX="arm-linux-gnueabi-"
+
+source compile.sh
+
