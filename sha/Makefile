@@ -9,9 +9,15 @@ CFLAGS = -O3 -Wall
 %.o: %.c
 	$(PREFIX)gcc -c $(CFLAGS) -o $@ $<
 
+all: sha sha_repeat
+
 sha:	sha_driver.o sha.o
 	$(PREFIX)gcc -static -o $@ sha_driver.o sha.o
 	$(PREFIX)strip $@
 
+sha_repeat:	sha_driver.o sha_repeat.o
+	$(PREFIX)gcc -static -o $@ sha_driver.o sha_repeat.o
+	$(PREFIX)strip $@
+
 clean:
-	rm -rf *.o sha output*
+	rm -rf *.o sha sha_repeat output*
