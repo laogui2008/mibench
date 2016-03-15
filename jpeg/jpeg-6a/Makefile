@@ -31,7 +31,7 @@ CFLAGS= -O  -I$(srcdir)
 ANSI2KNRFLAGS= 
 
 # Link-time cc options:
-LDFLAGS= 
+LDFLAGS= -static
 
 # To link any special libraries, add the necessary -l commands here.
 LDLIBS= 

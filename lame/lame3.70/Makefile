@@ -3,7 +3,7 @@
 
 # defaults:
 PGM = lame
-#det externaly CC = gcc
+#def externaly CC = gcc
 CC_OPTS =  -O
 GTK = 
 GTKLIBS = 
@@ -83,13 +83,13 @@ DEP = $(c_sources:.c=.d)
 #	$(CC) -o $(PGM)  main.o $(OBJ) $(LIBS) $(CPP_OPTS) $(LIBSNDFILE) $(GTKLIBS) $(LIBTERMCAP)
 
 $(PGM):	main.o libmp3lame.a 
-	$(CC) -o $(PGM)  main.o -L. -lmp3lame $(LIBS) $(LIBSNDFILE) $(GTKLIBS) $(LIBTERMCAP)
+	$(CC) -static -o $(PGM)  main.o -L. -lmp3lame $(LIBS) $(LIBSNDFILE) $(GTKLIBS) $(LIBTERMCAP)
 
 mp3x:	mp3x.o libmp3lame.a
-	$(CC) -o mp3x mp3x.o  $(OBJ) $(LIBS) $(LIBSNDFILE) $(GTKLIBS) $(LIBTERMCAP)
+	$(CC) -static -o mp3x mp3x.o  $(OBJ) $(LIBS) $(LIBSNDFILE) $(GTKLIBS) $(LIBTERMCAP)
 
 mp3rtp:	rtp.o mp3rtp.o libmp3lame.a
-	$(CC) -o mp3rtp mp3rtp.o rtp.o   $(OBJ) $(LIBS) $(LIBSNDFILE) $(GTKLIBS) $(LIBTERMCAP)
+	$(CC) -static -o mp3rtp mp3rtp.o rtp.o   $(OBJ) $(LIBS) $(LIBSNDFILE) $(GTKLIBS) $(LIBTERMCAP)
 
 libmp3lame.a:  $(OBJ) Makefile
 #	cd libmp3lame

@@ -10,7 +10,7 @@ CFLAGS = -O3 -Wall
 	$(PREFIX)gcc -c $(CFLAGS) -o $@ $<
 
 sha:	sha_driver.o sha.o
-	$(PREFIX)gcc -o $@ sha_driver.o sha.o
+	$(PREFIX)gcc -static -o $@ sha_driver.o sha.o
 	$(PREFIX)strip $@
 
 clean:
