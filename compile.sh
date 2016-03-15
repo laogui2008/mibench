@@ -67,6 +67,10 @@ cd susan/
 make CC=$GCC
 cd ..
 
+cd stringsearch/
+make CC=$GCC
+cd ..
+
 cd typeset/lout-3.24
 make PREFIX=$GCCPREFIX
 cd ../..
