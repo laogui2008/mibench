@@ -35,8 +35,16 @@ cd dijkstra/
 make CC=$GCC
 cd ..
 
+cd FFT/
+make CC=$GCC
+cd ..
+
 cd gsm/
 make PREFIX=$GCCPREFIX
+cd ..
+
+cd ghostscript/src
+make CC="$GCC -static"
 cd ..
 
 cd jpeg/jpeg-6a/
